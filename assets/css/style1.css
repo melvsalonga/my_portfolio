@@ -1,0 +1,45 @@
+
+
+.glowing
+{
+position: relative;
+width: 750px;
+height: 750px;
+}
+.glowing span
+{
+position: absolute;
+top: calc (80px * var(--i));
+Left: calc(80px * var(--i));
+bottom: calc(80px * var(--i));
+right: calc (80px * var(--i));
+}
+.glowing span:before
+{
+   content: '';
+   position: absolute;
+   top: 50%;
+   Left: -8px;
+   width: 15px;
+  height: 15px;
+   background: #f00;
+   border-radius: 50%;
+}
+.glowing span:nth-child(3n + 2):before
+{
+background: rgba(134,255,0,1);
+box-shadow: e e 20px rgba(134,255,0,1),
+            e 0 40px rgba(134, 255,0,1),
+            e e 60px rgba(134, 255,0,1),
+            e 0 80px rgba(134,255,0,1),
+            e 0 0 8px rgba(134,255,0,.1);
+}
+.glowing span:nth-child(3n + 2):before
+{
+background: rgba(255,214,0,1);
+box-shadow: e e 20px rgba (255,214,0,1),
+            e e 40px rgba(255,214,0,1),
+            e e 60px rgba(255,214,0,1),
+            e e 80px rgba(255,214,0,1),
+            e e e 8px rgba(255,214,0, .1);
+}
